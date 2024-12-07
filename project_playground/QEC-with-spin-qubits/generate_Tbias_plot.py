@@ -41,8 +41,8 @@ T_over_d = float(kwarg_dict['T_over_d']) # we need to change this for the SC3 be
 
 results_threshold = []
 results_full = []
-outpath_threshold = '~/'+kwarg_dict['code']+'_threshold_Tbias_logical'+logical+'_dmax'+kwarg_dict['dmax']+'_maxshots'+str(int(max_shots/1000))+'k_Gbias'+kwarg_dict['Gbias']+'.json'
-outpath_full = '~/'+kwarg_dict['code']+'_full_threshold_plots_Tbias_logical'+logical+'_dmax'+kwarg_dict['dmax']+'_maxshots'+str(int(max_shots/1000))+'k_Gbias'+kwarg_dict['Gbias']+'.json'
+outpath_threshold = './'+kwarg_dict['code']+'_threshold_Tbias_logical'+logical+'_dmax'+kwarg_dict['dmax']+'_maxshots'+str(int(max_shots/1000))+'k_Gbias'+kwarg_dict['Gbias']+'.json'
+outpath_full = './'+kwarg_dict['code']+'_full_threshold_plots_Tbias_logical'+logical+'_dmax'+kwarg_dict['dmax']+'_maxshots'+str(int(max_shots/1000))+'k_Gbias'+kwarg_dict['Gbias']+'.json'
 
 Tbias_list = np.logspace(-2,2,21)
 Nphi = len(Tbias_list)

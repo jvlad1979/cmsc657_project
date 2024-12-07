@@ -40,8 +40,8 @@ max_fail_rate = float(kwarg_dict['max_fail_rate'])
 
 results_threshold = []
 results_full = []
-outpath_threshold = '~/'+kwarg_dict['code']+'_threshold_Gbias_logical'+logical+'_dmax'+kwarg_dict['dmax']+'_maxshots'+str(int(max_shots/1000))+'k_Tbias'+kwarg_dict['Tbias']+'.json'
-outpath_full = '~/'+kwarg_dict['code']+'_full_threshold_plots_Gbias_logical'+logical+'_dmax'+kwarg_dict['dmax']+'_maxshots'+str(int(max_shots/1000))+'k_Tbias'+kwarg_dict['Tbias']+'.json'
+outpath_threshold = './'+kwarg_dict['code']+'_threshold_Gbias_logical'+logical+'_dmax'+kwarg_dict['dmax']+'_maxshots'+str(int(max_shots/1000))+'k_Tbias'+kwarg_dict['Tbias']+'.json'
+outpath_full = './'+kwarg_dict['code']+'_full_threshold_plots_Gbias_logical'+logical+'_dmax'+kwarg_dict['dmax']+'_maxshots'+str(int(max_shots/1000))+'k_Tbias'+kwarg_dict['Tbias']+'.json'
 
 Gbias_list = np.logspace(-2,2,21)
 Nphi = len(Gbias_list)

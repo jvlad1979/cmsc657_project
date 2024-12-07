@@ -178,7 +178,7 @@ def plot_3d_threshold(LogX_fail_3d_d_p,LogZ_fail_3d_d_p,ax,truncate=True,alpha=1
         ax.plot_surface(Xi,Yi,Zi,rstride=1,cstride=1, facecolors=fcolors, vmin=minn, vmax=maxx, alpha = alpha, antialiased = False, linewidth=0, shade=False)
         cbar = plt.colorbar(m, ax=ax, shrink = 0.6)
         cbar.set_label('$p_{th}\ [\%]$', rotation=270,labelpad=13.0, fontfamily = 'times')
-        # ax.plot_trisurf(pG_list,pT_list,pR_list, alpha= 0.5, cmap=cmap)
+        ax.plot_trisurf(pG_list,pT_list,pR_list, alpha= 0.5, cmap=cmap)
         ax.scatter(pG_list,pT_list,pR_list, c=pth_list, cmap=cmap,marker='.')
     else:
         ax.scatter(pG_list,pT_list,pR_list, c=pth_list, cmap=cmap,marker='o', alpha= alpha)
